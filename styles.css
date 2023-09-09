@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 15px 25px;
+  z-index: 10;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: auto;
+  transition: 0.2s;
+}
+
+.logo-nav:hover {
+  filter: brightness(1.3);
+  transform: translateY(-5px);
+}
+
+.logo-nav h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+}
+
+.navbar .btn .hamburger-btn {
+  font-size: 35px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+}
+
+
+.links-nav a {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.links-nav a:hover {
+  filter: brightness(1.3);
+  transition: 0.4s;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.navbar .links-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 370px;
+  padding-bottom: 300px;
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.2s;
+}
+
+.wrapper:hover {
+  transform: translateY(-5px);
+  filter: brightness(1.1);
+}
+
+.grey {
+  color: #999;
+}
+
+.image-top {
+  height: 250px;
+  width: 500px;
+  background-image: url(./img/img-profil.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.image-profil {
+  background-image: url(./img/logo.png);
+
+  background-position: center;
+  background-size: cover;
+  background-color: #a757f8;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.profil-bottom {
+  margin-top: 70px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-infos {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+.name {
+  font-weight: 800;
+  margin-right: 15px;
+}
+.email {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.town {
+  font-size: 20px;
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-solid {
+  color: #388eff;
+  margin-right: 5px;
+}
+
+.stat-section {
+  width: 100%;
+}
+
+.separation {
+  display: inline-block;
+  border-top: 3px solid #000;
+  width: 300px;
+  height: 30px;
+}
+
+.skills-icons {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills-icons .fa-brands {
+  font-size: 30px;
+}
+
+.fa-node-js {
+  color: #68a063;
+}
+.fa-react {
+  color: #61dafb;
+}
+.fa-square-js {
+  color: #f7df1e;
+}
+.fa-bootstrap {
+  color: #8050b9;
+}
+.fa-css3 {
+  color: #0074be;
+}
+.fa-html5 {
+  color: #e44d26;
+}
+
+@media (max-width: 900px) {
+  .header .navbar .logo-nav {
+    font-size: 30px;
+  }
+  .header .navbar .links-nav {
+    font-size: 12px;
+  }
+}
+@media (max-width: 700px) {
+ .navbar .btn .hamburger-btn {
+    display: block;
+    z-index: 1;
+    
+  }
+  
+  .links-nav {
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #ffffff26;
+    backdrop-filter: blur(6px);
+    width: 100%;
+    height: 100vh;
+    margin-left: -100% ;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-left: 0 ;
+  }
+  
+  .links-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ .navbar {
+    padding: 0;
+ }
+ .navbar .links-nav ul li {
+        margin: 45px 0;
+        font-size: 2em;
+        
+ }
+ .navbar .logo-nav {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+ }

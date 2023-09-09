@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <header class="header">
+    <nav role="navigation" class="navbar" aria-label="main navigation">
+      <div class="logo-nav">
+        <a href="#">
+          <h2>Isaac</h2>
+        </a>
+      </div>
+      <div class="links-nav">
+        <ul>
+          <li><a class="links about" href="#">About</a></li>
+          <li><a class="links projects" href="#">Projects</a></li>
+          <li><a class="links contact" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="btn">
+        <a class="hamburger-btn" href="#" role="button" aria-label="menu"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="image-top">
+          <div class="image-profil"></div>
+        </div>
+        <div class="profil-bottom">
+          <div class="profil-infos">
+            <div class="main-infos">
+              <h3 class="name">Isaac Farih</h3>
+              <p class="age grey">28</p>
+            </div>
+            <p class="email">isaac.farih@icloud.com</p>
+            <p class="town"><i class="fa-solid fa-location-dot"></i>Paris</p>
+          </div>
+          <section class="stat-section">
+            <div class="separation"></div>
+            <div class="skills-icons">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+              <i class="fa-brands fa-bootstrap"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const hamburgerBtn = document.querySelector(".hamburger-btn");
+    const linksNav = document.querySelector(".links-nav");
+
+    hamburgerBtn.addEventListener("click", () => {
+      linksNav.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>
