@@ -13,6 +13,7 @@
   list-style: none;
   text-decoration: none;
 }
+/* END RESET AND FONTFAMILY  */
 
 /* NAVBAR  */
 .navbar {
@@ -25,7 +26,7 @@
   z-index: 10;
   background-color: #fff;
 }
-/* NAVBAR./RESPONSIVE  */
+/* NAVBAR RESPONSIVE  */
 @media screen and (max-width: 500px) {
   .navbar {
     padding: 50px;
@@ -59,7 +60,7 @@
     font-size: 1.4em;
   }
 }
-/* END RESPONSIVE  */
+/* END NAVBAR RESPONSIVE  */
 .logo-nav {
   display: flex;
   justify-content: flex-start;
@@ -70,7 +71,7 @@
 .logo-nav img {
   width: 65px;
   height: 65px;
-  background-color: #8050b9;
+  background-color: #7843e9;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
@@ -108,7 +109,7 @@
 }
 
 .links-nav a:hover {
-  color: #8050b9;
+  color: #7843e9;
 }
 
 .navbar .btn .hamburger-btn {
@@ -130,7 +131,7 @@
     margin-left: 0;
   }
 }
-
+/* END HAMBURGER RESPONSIVE  */
 /* WELCOME SECTION  */
 .welcome {
   width: 100%;
@@ -152,6 +153,7 @@
   text-align: center;
   color: #111111;
   text-transform: uppercase;
+  font-weight: 800;
 }
 @media screen and (max-width: 500px) {
   .welcome-text {
@@ -168,6 +170,7 @@
   font-size: 22px;
   text-align: center;
 }
+/* RESPONSIVE P */
 @media screen and (max-width: 500px) {
   .welcome p {
     margin: 0;
@@ -175,6 +178,7 @@
     line-height: 1.6;
   }
 }
+/* END RESPONSIVE P  */
 /* WELCOME SECTION ./ SOCIAL ICONS  */
 .social-icons {
   display: flex;
@@ -190,7 +194,7 @@
   margin: 20px;
   width: 55px;
   height: 55px;
-  background-color: #8050b9;
+  background-color: #7843e9;
   border-radius: 50%;
   font-size: 30px;
   text-align: center;
@@ -216,9 +220,39 @@
     font-size: 23px;
   }
 }
+/* END RESPONSIVE SOCIAL ICONS  */
 .social-icons ul i {
   color: #fff;
 }
 .social-icons ul li:hover {
   transform: translateY(5px);
+}
+section .about-container {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem 0;
+}
+.about-container header h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 6px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.about-container header .border {
+  display: flex;
+  border: solid 3px #7843e9;
+  border-radius: 5px;
+  width: 2.5rem;
+  position: relative;
+  left: 50%;
+}
+.about-sec p {
+  width: 600px;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 30px;
 }
